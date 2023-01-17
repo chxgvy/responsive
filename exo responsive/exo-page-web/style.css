@@ -1,0 +1,36 @@
+header {
+    visibility: hidden;
+}
+
+article {
+    display: flex;
+}
+
+p {
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    visibility: hidden;
+}
+
+@media screen and (min-width : 800px) {
+    header {
+        visibility: visible;
+    }
+
+}
+
+@media screen and (max-width : 640px) {
+    article {
+        display: block;
+    }
+}
+
+@media print {
+    footer {
+        visibility: visible;
+    }
+}

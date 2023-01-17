@@ -1,0 +1,67 @@
+img {
+    width: 80px;
+}
+
+h1 {
+    min-width:500px;
+    margin-bottom: 5px; 
+}
+
+header {
+    position: relative;
+    max-width: 90%;
+    border-bottom: 1px solid black; 
+}
+
+header>p>img {
+    float: left;
+}
+
+#date {
+    font-size: 20px;
+}
+
+#precipitation {
+    font-size: 20px;
+    margin-left: 60%;
+    min-width: 180px;
+}
+
+article {
+    position: relative;
+    max-width: 100%;
+    border-bottom: 1px solid black;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article>p {
+    display: inline-block;
+    width: 10%;
+}
+
+@media screen and (min-width:920px) {
+    article>section>p {
+        display: block;
+    }
+    section {
+        display:block;
+    }
+    article {
+        border: none;
+        float: left;
+    }
+    header {
+        border: none;   
+    }
+    body>article {
+        margin-left:5%;
+    }
+}
+
+
